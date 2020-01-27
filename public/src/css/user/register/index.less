@@ -1,0 +1,129 @@
+
+@import "../../define.less";
+
+#base;
+
+.bd-wrap .title{
+    min-height: 14px * @scale;
+}
+
+.register-form{
+    margin-top: 8px * @scale;
+
+    .btn{
+        display: block;
+        margin: 14px * @scale auto;
+        width: 98%;
+        height: 96px;
+        font-size: 15px * @scale;
+        line-height: 32px * @scale;
+        color: #42874f;
+    }
+
+    .captcha-wrap{
+        border-bottom: solid #dbdbdb 1px;
+
+        .form-blk{
+            border: none;
+            .input-box{
+                width: 44%;
+                border: solid #dbdbdb 1px;
+                border-radius: 8px * @scale;
+            }
+        }
+
+        .btn{
+            display: block;
+            margin-left: 25%;
+            margin-top: 15px * @scale;
+            margin-bottom: 10px * @scale;
+            width: 25%;
+            color: #42874f;
+            height: 25px * @scale;  
+            font-size: 13px * @scale;
+            line-height: 25px * @scale;
+            border-radius: 15px;
+        }
+    }
+}
+
+.form-blk{
+    position: relative;
+    padding-top: 16px * @scale;    
+    text-align: justify;
+    border-bottom: @border-style #dbdbdb @border-size;
+    font-size: @font-size;
+    line-height: 24px * @scale;
+
+    .input-key{
+        display: inline-block;
+        float: left;
+        width: 21%;
+        height: 24px * @scale;
+        color: #787878;
+
+        &:after{
+            display: inline-block;
+            overflow: hidden;
+            width: 100%;
+            height: 0;
+            content:'';
+        }
+    }
+
+    .input-box{
+        float: left;
+        border: none;
+        width: 72%;
+        height: 24px * @scale;
+        font-size: 12px * @scale;
+        padding-left: 3px * @scale;
+
+        &:focus{
+            outline: none;
+            border: none;
+        }
+    }
+
+    .sex-select{
+        width: 45px * @scale;
+        height: 23px * @scale;
+        font-size: @font-size;
+        line-height: 23px * @scale;
+        border: none;
+        text-align: center;
+        border-radius: 12px * @scale;
+        margin-left: 3px * @scale;
+        margin-bottom: 3px * @scale;
+        background-color: #f0edf0;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;    
+    }
+
+    .fucking-colon{
+        display: inline-block;
+        float: left;
+        font-size: @font-size;
+        color: #787878;    
+    }
+}
+
+.user-protocol{
+    display: inline-block;
+    float: left;
+    font-size: 12px * @scale;
+    color: #3b3b3b;
+
+    .protocol-link{
+        color: #fa9f43;
+    }
+
+    input[type="checkbox"]{
+        min-width: 15px * @scale;
+        min-height: 15px * @scale;
+        vertical-align: -3px * @scale;
+        border-radius: 2px * @scale;
+    }
+}
+

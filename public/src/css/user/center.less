@@ -1,0 +1,114 @@
+
+@import "../define.less";
+
+#base;
+
+.title{
+    position: relative;
+    overflow: auto;
+    *zoom: 1;
+
+    .setting-btn{
+        display: block;
+        position: absolute;
+        height: 15px * @scale;
+        top: 0px;
+        right: 0px;
+    }
+}
+
+.setting-btn img{
+    height: 100%;
+}
+
+.user-info-wrap{
+    margin-top: 32px * @scale;
+    margin-bottom: 50px;
+}
+
+.head-portrait-wrap{
+    float: right;
+    width: 38%;
+    border: @border-style #adadad @border-size;
+    border-radius: 5px * @scale;
+    margin-top: 4px * @scale;
+    margin-left: 25px * @scale;
+    padding: 6px * @scale;
+
+    .head-portrait{
+        display: block;
+        width: 100%;
+    }
+}
+
+.form-blk{
+    position: relative;
+    padding-top: 16px * @scale;    
+    text-align: justify;
+    border-bottom: @border-style #dbdbdb @border-size;
+    font-size: @font-size;
+    line-height: 24px * @scale;
+
+    .input-key{
+        display: inline-block;
+        float: left;
+        height: 24px * @scale;
+        color: #787878;
+    }
+
+    .input-box{
+        float: left;
+        border: none;
+        width: 50%;
+        height: 24px * @scale;
+        font-size: 14px * @scale;
+        padding-left: 3px * @scale;
+        color: #adadad;
+        background: none;
+
+        &:focus{
+            outline: none;
+            border: none;
+        }
+    }
+
+    .gender-select{
+        border: none;
+        color: #a5a5a5;
+        width: 45px * @scale;
+        height: 23px * @scale;
+        font-size: 14px * @scale;
+        line-height: 23px * @scale;
+        border-radius: 12px * @scale;
+        margin-left: 3px * @scale;
+        margin-bottom: 3px * @scale;
+        background-color: #f0edf0;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;    
+    }
+
+    .fucking-colon{
+        display: inline-block;
+        float: left;
+        font-size: @font-size;
+        color: #787878;    
+    }
+}
+
+.btn-save{
+    width: 30%;
+    margin-top: 24px * @scale;
+    margin-left: 70%;
+}
+
+.btn-look-rec{
+    margin: 24px * @scale auto;
+    width: 90%;
+}
+
+.account-form .btn{
+    display: block;
+    font-size: 14px * @scale;
+    line-height: 24px * @scale;
+}
